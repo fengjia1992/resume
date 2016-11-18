@@ -15,7 +15,7 @@ html,body,.main{
 .slide1{
     position: relative;
     background: url("../img/bg2.png") no-repeat -0.7rem;
-    background-size: cover;
+    background-size: 100% 100%;
     /*display: none;*/
 }
 .slide1 img,.slide2 img,.slide3 img,.slide4 img,.slide5 img,.slide6 img{
