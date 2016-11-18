@@ -14,7 +14,7 @@ html,body,.main{
 /*page1 cover*/
 .slide1{
     position: relative;
-    background: url("../img/bg.png") no-repeat -0.7rem;
+    background: url("../img/bg2.png") no-repeat -0.7rem;
     background-size: cover;
     /*display: none;*/
 }
