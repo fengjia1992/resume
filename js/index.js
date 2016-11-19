@@ -22,13 +22,17 @@ var mySwiper = new Swiper(".swiper-container", {
                         break;
                     default :
                         item.id = 'page' + curIndex ;
+                        console.log(index)
                 }
             }
         })
     }
 
 });
-
+var oImg=document.querySelector('#self');
+oImg.addEventListener('click',function () {
+    expRender.init()
+},false);
 var expRender=(function () {
     var oDiv=document.querySelector('#des');
     var aSpan=oDiv.getElementsByTagName('span');
@@ -43,9 +47,8 @@ var expRender=(function () {
                     clearInterval(timer);
                     return;
                 }
-                animate(aSpan[n],{opacity:1},{duration:100})
+                animate(aSpan[n],{opacity:1},{duration:100});
                 n++;
-                console.log(n);
             },200)
 
             function createSpan(){
@@ -65,7 +68,7 @@ var expRender=(function () {
     };
 
 })();
-expRender.init();
+
 
 
 var music=document.querySelector('.music');

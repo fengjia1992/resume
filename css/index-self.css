@@ -64,7 +64,6 @@ html,body,.main{
 }
 .arrow{
     position: absolute;
-    bottom: 0.6rem;
     left: 50%;
     margin-left: -0.15rem;
     width: 0.25rem;
@@ -74,58 +73,68 @@ html,body,.main{
     border-right:0.08rem solid #fff;
     -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
+    -webkit-animation: show 1s linear 2s infinite both;
     animation: show 1s linear 2s infinite both;
+    z-index: 200;
 }
 @-webkit-keyframes show {
     0%{
         opacity: 0;
-        bottom: 0.6rem;
+        bottom: 0.1rem;
     }
     50%{
         opacity: 1;
-        bottom: 0.8rem;
+        bottom: 0.2rem;
     }
     100%{
         opacity: 0;
-        bottom: 1rem;
+        bottom: 0.3rem;
     }
 }
 @keyframes show {
     0%{
         opacity: 0;
-        bottom: 0.6rem;
+        bottom: 0.1rem;
     }
     50%{
         opacity: 1;
-        bottom: 0.8rem;
+        bottom: 0.2rem;
     }
     100%{
         opacity: 0;
-        bottom: 1rem;
+        bottom: 0.3rem;
     }
 }
 #page1 img:nth-child(1){
+    -webkit-animation:rollIn 1s 0.2s both ;
     animation: rollIn 1s 0.2s both;
 }
 #page1 img:nth-child(2){
+    -webkit-animation:rollIn 1s 0.4s both ;
     animation: rollIn 1s 0.4s both;
 }
 #page1 img:nth-child(3){
+    -webkit-animation: 1s 0.6s both;
     animation: rollIn 1s 0.6s both;
 }
 #page1 img:nth-child(4){
+    -webkit-animation:rollIn 1s 0.8s both ;
     animation: rollIn 1s 0.8s both;
 }
 #page1 img:nth-child(5){
+    -webkit-animation:bounceIn 1s 1s both ;
     animation: bounceIn 1s 1s both;
 }
 #page1 img:nth-child(6){
+    -webkit-animation: bounceInDown 3s 0.5s both;
     animation: bounceInDown 3s 0.5s both;
 }
 #page1 img:nth-child(7){
+    -webkit-animation:bounceInDown 3s 0.7s both ;
     animation: bounceInDown 3s 0.7s both;
 }
 #page1 img:nth-child(8){
+    -webkit-animation:bounceInDown 3s 0.9s both ;
     animation: bounceInDown 3s 0.9s both;
 }
 #page1 img{
@@ -183,9 +192,11 @@ html,body,.main{
     margin-top: 1.4rem;
 }
 #page2 img:nth-child(1){
+    -webkit-animation:rotate 1s 0s both;
     animation:rotate 1s 0s both;
 }
 #page2 img:nth-child(2){
+    -webkit-animation: circle linear 1.4s 1s infinite both,fadeIn 0.5s 1s both;
     animation: circle linear 1.4s 1s infinite both,fadeIn 0.5s 1s both;
 }
 @-webkit-keyframes circle {
@@ -217,30 +228,39 @@ html,body,.main{
     animation: bounceInDown 1s 0.7s both;
 }
 #page2 :nth-child(5){
+    -webkit-animation: lightSpeedIn 1s 1.3s both;
     animation: lightSpeedIn 1s 1.3s both;
 }
 #page2 :nth-child(6){
+    -webkit-animation: lightSpeedIn 1s 1.5s both;
     animation: lightSpeedIn 1s 1.5s both;
 }
 #page2 :nth-child(7){
+    -webkit-animation: lightSpeedIn 1s 1.7s both;
     animation: lightSpeedIn 1s 1.7s both;
 }
 #page2 :nth-child(8){
+    -webkit-animation: lightSpeedIn 1s 1.9s both;
     animation: lightSpeedIn 1s 1.9s both;
 }
 #page2 :nth-child(9){
+    -webkit-animation: lightSpeedIn 1s 2.1s both;
     animation: lightSpeedIn 1s 2.1s both;
 }
 #page2 :nth-child(10){
+    -webkit-animation: lightSpeedIn 1s 2.3s both;
     animation: lightSpeedIn 1s 2.3s both;
 }
 #page2 :nth-child(11){
+    -webkit-animation: lightSpeedIn 1s 2.4s both;
     animation: lightSpeedIn 1s 2.4s both;
 }
 #page2 :nth-child(12){
+    -webkit-animation: lightSpeedIn 1s 2.7s both;
     animation: lightSpeedIn 1s 2.7s both;
 }
 #page2 :nth-child(13){
+    -webkit-animation: lightSpeedIn 1s 3s both;
     animation: lightSpeedIn 1s 3s both;
 }
 @-webkit-keyframes rotate {
@@ -323,30 +343,39 @@ html,body,.main{
     top: 4.4rem;
 }
 #page3 img:nth-child(1){
+    -webkit-animation: fadeIn 1s 0s both,circle linear 1.4s 0s infinite both;
     animation: fadeIn 1s 0s both,circle linear 1.4s 0s infinite both;
 }
 #page3 img:nth-child(2){
+    -webkit-animation: bounceIn 1s 0.5s  both;
     animation: bounceIn 1s 0.5s  both;
 }
 #page3 img:nth-child(8){
+    -webkit-animation: bounceInLeft 1.5s 1s  both,tada linear 2s 3.5s infinite both;
     animation: bounceInLeft 1.5s 1s  both,tada linear 2s 3.5s infinite both;
 }
 #page3 img:nth-child(9){
+    -webkit-animation: bounceInRight 1.5s 1.5s  both,tada 2s linear 3.8s infinite both;
     animation: bounceInRight 1.5s 1.5s  both,tada 2s linear 3.8s infinite both;
 }
 #page3 img:nth-child(6){
+    -webkit-animation: bounceInLeft 1.5s 2s  both,tada 2s linear 4.1s infinite both;
     animation: bounceInLeft 1.5s 2s  both,tada 2s linear 4.1s infinite both;
 }
 #page3 img:nth-child(7){
+    -webkit-animation: bounceInRight 1.5s 2.5s  both,tada 2s linear 4.3s infinite both;
     animation: bounceInRight 1.5s 2.5s  both,tada 2s linear 4.3s infinite both;
 }
 #page3 img:nth-child(3){
+    -webkit-animation: bounceInLeft 1.5s 3s  both,tada 2s linear 4.6s infinite both;
     animation: bounceInLeft 1.5s 3s  both,tada 2s linear 4.6s infinite both;
 }
 #page3 img:nth-child(5){
+    -webkit-animation: bounceInRight 1.5s 3.5s  both,tada 2s linear 4.9s infinite both;
     animation: bounceInRight 1.5s 3.5s  both,tada 2s linear 4.9s infinite both;
 }
 #page3 img:nth-child(4){
+    -webkit-animation: bounceInDown 1.5s 4s  both,tada 2s linear 5.2s infinite both;
     animation: bounceInDown 1.5s 4s  both,tada 2s linear 5.2s infinite both;
 }
 #page3 :nth-child(n){
@@ -366,12 +395,12 @@ html,body,.main{
 .slide4 img:nth-child(1){
     width: 2.5rem;
     left: 2rem;
-    top: 0.8rem;
+    top: 0.3rem;
 }
 .slide4 img:nth-child(2){
     width: 2rem;
     left: 2.25rem;
-    top: 1.7rem;
+    top: 1.2rem;
 }
 .slide4 :nth-child(3){
     position: relative;
@@ -484,9 +513,11 @@ html,body,.main{
     top:8.9rem;
 }
 #page4 :nth-child(1){
+    -webkit-animation: fadeIn 1s 0s both,circle linear 1.4s 1s infinite both;
     animation: fadeIn 1s 0s both,circle linear 1.4s 1s infinite both;
 }
 #page4 :nth-child(2){
+    -webkit-animation: bounceIn 1s 0s  both;
     animation: bounceIn 1s 0s  both;
 }
 /*#page4 :nth-child(3){
@@ -497,6 +528,7 @@ html,body,.main{
     animation: bounceInLeft 1.5s 0.9s  both;
 }*/
 #page4 :nth-child(5){
+    -webkit-animation: long linear 2s 1.5s both;
     animation: long linear 2s 1.5s both;
 }
 @-webkit-keyframes long {
@@ -504,10 +536,10 @@ html,body,.main{
         height: 0;
     }
     50%{
-        height: 4rem;
+        height: 3rem;
     }
     100%{
-        height: 8rem;
+        height: 5.8rem;
     }
  }
 @keyframes long {
@@ -515,40 +547,50 @@ html,body,.main{
         height: 0;
     }
     50%{
-        height: 4rem;
+        height: 3rem;
     }
     100%{
-        height: 8rem;
+        height:5.8rem;
     }
 }
 #page4 :nth-child(6){
-    animation: zoomIn linear 0.5s 1s both;
+    -webkit-animation: zoomIn linear 0.5s 0.5s both;
+    animation: zoomIn linear 0.5s 0.5s both;
 }
 #page4 :nth-child(7){
+    -webkit-animation: zoomIn linear 0.5s 1.5s both;
     animation: zoomIn linear 0.5s 1.5s both;
 }
 #page4 :nth-child(8){
+    -webkit-animation: zoomIn linear 0.5s 2s both;
     animation: zoomIn linear 0.5s 2s both;
 }
 #page4 :nth-child(9){
+    -webkit-animation: zoomIn linear 0.5s 2.5s both;
     animation: zoomIn linear 0.5s 2.5s both;
 }
 #page4 :nth-child(10){
+    -webkit-animation: zoomIn linear 0.5s 3s both;
     animation: zoomIn linear 0.5s 3s both;
 }
 #page4 :nth-child(11){
+    -webkit-animation: bounceInRight linear 1.5s 1s both;
     animation: bounceInRight linear 1.5s 1s both;
 }
 #page4 :nth-child(12){
+    -webkit-animation: bounceInLeft linear 1.5s 1.5s both;
     animation: bounceInLeft linear 1.5s 1.5s both;
 }
 #page4 :nth-child(13){
+    -webkit-animation: bounceInRight linear 1.5s 2.1s both;
     animation: bounceInRight linear 1.5s 2.1s both;
 }
 #page4 :nth-child(14){
+    -webkit-animation: bounceInLeft linear 1.5s 2.5s both;
     animation: bounceInLeft linear 1.5s 2.5s both;
 }
 #page4 :nth-child(15){
+    -webkit-animation: bounceInRight linear 1.5s 2.8s both;
     animation: bounceInRight linear 1.5s 2.8s both;
 }
 #page4 :nth-child(n){
@@ -569,12 +611,12 @@ html,body,.main{
 .slide5 img:nth-child(1){
     width: 2.5rem;
     left: 2rem;
-    top: 0.8rem;
+    top: 0.3rem;
 }
 .slide5 img:nth-child(2){
     width: 2rem;
     left: 2.25rem;
-    top: 1.7rem;
+    top: 1.2rem;
 }
 .slide5 :nth-child(3){
     width: 5rem;
@@ -586,12 +628,15 @@ html,body,.main{
     font-size: 0.3rem;
 }
 #page5 :nth-child(1){
+    -webkit-animation: fadeIn 1s 0s both,circle linear 1.4s 1s infinite both;
     animation: fadeIn 1s 0s both,circle linear 1.4s 1s infinite both;
 }
 #page5 :nth-child(2){
+    -webkit-animation: bounceIn 1s 0s  both;
     animation: bounceIn 1s 0s  both;
 }
 #page5 :nth-child(3){
+    -webkit-animation: rotateIn 1s 0.8s  both;
     animation: rotateIn 1s 0.8s  both;
 }
 #page5 :nth-child(n){
@@ -619,6 +664,8 @@ html,body,.main{
 }
 .slide6 :nth-child(4){
     width: 4rem;
+    height: 4rem;
+    overflow: hidden;
     margin-left: 0.8rem;
     margin-top: 4rem;
     color: snow;
@@ -627,13 +674,16 @@ html,body,.main{
     opacity: 0;
 }
 #page6 :nth-child(1){
-    animation:circle linear 8s 0s infinite both
+    -webkit-animation:circle linear 8s 0s infinite both;
+    animation:circle linear 8s 0s infinite both;
 }
 #page6 :nth-child(2){
-    animation:circle linear 8s 0s infinite both
+    -webkit-animation:circle linear 8s 0s infinite both;
+    animation:circle linear 8s 0s infinite both;
 }
 #page6 :nth-child(3){
-    animation:rollIn linear 1s 0s  both
+    -webkit-animation:rollIn linear 1s 0s  both;
+    animation:rollIn linear 1s 0s  both;
 }
 #page6 :nth-child(n){
     opacity: 1;
