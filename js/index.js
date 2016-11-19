@@ -45,7 +45,7 @@ var expRender=(function () {
                 }
                 animate(aSpan[n],{opacity:1},{duration:100})
                 n++;
-                // console.log(n);
+                console.log(n);
             },200)
 
             function createSpan(){
@@ -68,7 +68,7 @@ var expRender=(function () {
 expRender.init();
 
 
-/*var music=document.querySelector('.music');
+var music=document.querySelector('.music');
 var beyond=document.querySelector('#beyond');
 window.setTimeout(function(){
     beyond.play();
@@ -77,7 +77,7 @@ window.setTimeout(function(){
     },false)
 },1000);
 music.addEventListener('click',function(){
-    /!*paused属性判断音频文件是播放的晒是停止 如果为true说明是停止的，播放时play*!/
+    /*paused属性判断音频文件是播放的晒是停止 如果为true说明是停止的，播放时play*/
     if(beyond.paused){
         beyond.play();
         music.className="music musicCur";
@@ -86,6 +86,6 @@ music.addEventListener('click',function(){
         music.className="music";
         music.style.opacity=1;
     }
-},false);*/
+},false);
 /*CUBERENDER*/
 
